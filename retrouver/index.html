@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+
+  <title>Disaster Victim Helpline</title>
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <link rel="js" href="jquery-30.4.1.min.js">
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+<link rel="js" href="jquery-3.4.1.min.js">
+
+
+
+</head>
+
+<body>
+
+  <style>
+  import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
+  body {
+    font-family: 'Open Sans', sans-serif;
+    color: #0c0c0c;
+    background-color: #ffffff;
+    overflow-x: hidden;
+  }
+
+  .layout_padding {
+    padding: 90px 0;
+  }
+
+  .layout_padding2 {
+    padding: 75px 0;
+  }
+
+  .layout_padding2-top {
+    padding-top: 75px;
+  }
+
+  .layout_padding2-bottom {
+    padding-bottom: 75px;
+  }
+
+  .layout_padding-top {
+    padding-top: 90px;
+  }
+
+  .layout_padding-bottom {
+    padding-bottom: 90px;
+  }
+
+
+
+
+  a,
+  a:hover,
+  a:focus {
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:focus {
+    color: initial;
+  }
+
+  .btn,
+  .btn:focus {
+    outline: none !important;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
+  /*header section*/
+  .hero_area {
+    position: relative;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .sub_page .hero_area {
+    min-height: auto;
+  }
+
+  .sub_page .header_section {
+    margin-top: 0;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .header_section .header_top {
+    padding: 15px 0;
+    background-color: #04233b;
+  }
+
+  .header_section .header_top .contact_nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .header_section .header_top .contact_nav a {
+    color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 15px;
+  }
+
+  .header_section .header_top .contact_nav a i {
+    margin-right: 5px;
+    border-radius: 100%;
+    background-color: #ffffff;
+    width: 25px;
+    height: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #0a97b0;
+  }
+
+  .header_section .header_top .contact_nav a:hover i {
+    color: #04233b;
+  }
+
+  .header_section .header_bottom {
+    background-color: #ffffff;
+    padding: 15px 0;
+  }
+
+  .header_section .header_bottom .container-fluid {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  .navbar-brand span {
+    font-weight: bold;
+    font-size: 24px;
+    color: #000000;
+  }
+
+  .custom_nav-container {
+    padding: 0;
+  }
+
+  .custom_nav-container .navbar-nav {
+    margin-left: auto;
+  }
+
+  .custom_nav-container .navbar-nav .nav-item .nav-link {
+    padding: 5px 20px;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+
+  .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
+    color: #0a97b0;
+  }
+
+  .custom_nav-container .nav_search-btn {
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    border: none;
+    color: #000000;
+  }
+
+  .custom_nav-container .nav_search-btn:hover {
+    color: #000000;
+  }
+
+  .custom_nav-container .navbar-toggler {
+    outline: none;
+  }
+
+  .custom_nav-container .navbar-toggler {
+    padding: 0;
+    width: 37px;
+    height: 42px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+
+  .custom_nav-container .navbar-toggler span {
+    display: block;
+    width: 35px;
+    height: 4px;
+    background-color: #000000;
+    margin: 7px 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    position: relative;
+    border-radius: 5px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+
+  .custom_nav-container .navbar-toggler span::before, .custom_nav-container .navbar-toggler span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    top: -10px;
+    border-radius: 5px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+
+  .custom_nav-container .navbar-toggler span::after {
+    top: 10px;
+  }
+
+  .custom_nav-container .navbar-toggler[aria-expanded="true"] {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+
+  .custom_nav-container .navbar-toggler[aria-expanded="true"] span {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+
+  .custom_nav-container .navbar-toggler[aria-expanded="true"] span::before, .custom_nav-container .navbar-toggler[aria-expanded="true"] span::after {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    top: 0;
+  }
+
+  .custom_nav-container .navbar-toggler[aria-expanded="true"] .s-1 {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    margin: 0;
+    margin-bottom: -4px;
+  }
+
+  .custom_nav-container .navbar-toggler[aria-expanded="true"] .s-2 {
+    display: none;
+  }
+
+  .custom_nav-container .navbar-toggler[aria-expanded="true"] .s-3 {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    margin: 0;
+    margin-top: -4px;
+  }
+
+  .custom_nav-container .navbar-toggler[aria-expanded="false"] .s-1,
+  .custom_nav-container .navbar-toggler[aria-expanded="false"] .s-2,
+  .custom_nav-container .navbar-toggler[aria-expanded="false"] .s-3 {
+    -webkit-transform: none;
+            transform: none;
+  }
+
+  /*end header section*/
+  /* slider section */
+  .slider_section {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+
+  .slider_section .slider_bg_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  .slider_section .slider_bg_box img {
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .slider_section .slider_bg_box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(37, 37, 37, 0.9)), to(rgba(37, 37, 37, 0.7)));
+    background: linear-gradient(to right, rgba(37, 37, 37, 0.9), rgba(37, 37, 37, 0.7));
+  }
+
+  .slider_section .row {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .slider_section #customCarousel1 {
+    width: 100%;
+    position: unset;
+  }
+
+  .slider_section .detail-box {
+    color: #04233b;
+  }
+
+  .slider_section .detail-box h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #ffffff;
+  }
+
+  .slider_section .detail-box p {
+    color: #fefefe;
+    font-size: 14px;
+  }
+
+  .slider_section .detail-box .btn-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 -5px;
+    margin-top: 25px;
+  }
+
+  .slider_section .detail-box .btn-box a {
+    margin: 5px;
+    text-align: center;
+    width: 165px;
+  }
+
+  .slider_section .detail-box .btn-box .btn1 {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #0a97b0;
+    color: #ffffff;
+    border-radius: 0;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    border: none;
+  }
+
+  .slider_section .detail-box .btn-box .btn1:hover {
+    background-color: #065968;
+  }
+
+  .slider_section .detail-box .btn-box .btn2 {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 0;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    border: none;
+  }
+
+  .slider_section .detail-box .btn-box .btn2:hover {
+    background-color: black;
+  }
+
+  .slider_section .carousel-indicators {
+    position: unset;
+    margin: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 45px;
+  }
+
+  .slider_section .carousel-indicators li {
+    background-color: #ffffff;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    opacity: 1;
+  }
+
+  .slider_section .carousel-indicators li.active {
+    width: 20px;
+    height: 20px;
+    background-color: #0a97b0;
+  }
+
+  .service_section {
+    position: relative;
+  }
+
+  .service_section .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 45px;
+    background-color: #f8f8f9;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  .service_section .box .img-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 125px;
+    min-width: 75px;
+    height: 75px;
+    margin-right: 25px;
+  }
+
+  .service_section .box .img-box img {
+    max-width: 100%;
+    max-height: 100%;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+
+  .service_section .box .detail-box h5 {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .service_section .box .detail-box a {
+    color: #04233b;
+    font-weight: 600;
+  }
+
+  .service_section .box .detail-box a:hover {
+    color: #0a97b0;
+  }
+
+  .about_section .row {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .about_section .img-box {
+    position: relative;
+  }
+
+  .about_section .img-box img {
+    max-width: 100%;
+    position: relative;
+    z-index: 2;
+  }
+
+  .about_section .img-box::before, .about_section .img-box::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 45px;
+    height: 70%;
+    background-color: #04233b;
+    z-index: 3;
+  }
+
+  .about_section .img-box::before {
+    left: 0;
+    z-index: 1;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+
+  .about_section .img-box::after {
+    right: 0;
+    z-index: 1;
+    -webkit-transform: translate(50%, -50%);
+            transform: translate(50%, -50%);
+  }
+
+  .about_section .detail-box p {
+    color: #1f1f1f;
+    margin-top: 15px;
+  }
+
+  .about_section .detail-box a {
+    display: inline-block;
+    padding: 10px 45px;
+    background-color: #0a97b0;
+    color: #ffffff;
+    border-radius: 0px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    border: none;
+    margin-top: 15px;
+  }
+
+  .about_section .detail-box a:hover {
+    background-color: #065968;
+  }
+
+  .track_section {
+    position: relative;
+    color: #ffffff;
+  }
+
+  .track_section .track_bg_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  .track_section .track_bg_box img {
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .track_section .track_bg_box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(37, 37, 37, 0.95)), to(rgba(37, 37, 37, 0.55)));
+    background: linear-gradient(to right, rgba(37, 37, 37, 0.95), rgba(37, 37, 37, 0.55));
+  }
+
+  .track_section p {
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+
+  .track_section form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+
+  .track_section form input {
+    background-color: #ffffff;
+    border: none;
+    -webkit-box-flex: 2.5;
+        -ms-flex: 2.5;
+            flex: 2.5;
+    outline: none;
+    color: #000000;
+    min-height: 42.4px;
+    padding-left: 15px;
+  }
+
+  .track_section form input ::-webkit-input-placeholder {
+    color: #ffffff;
+    opacity: 0.2;
+  }
+
+  .track_section form input :-ms-input-placeholder {
+    color: #ffffff;
+    opacity: 0.2;
+  }
+
+  .track_section form input ::-ms-input-placeholder {
+    color: #ffffff;
+    opacity: 0.2;
+  }
+
+  .track_section form input ::placeholder {
+    color: #ffffff;
+    opacity: 0.2;
+  }
+
+  .track_section form button {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: inline-block;
+    padding: 9px 30px;
+    background-color: #0a97b0;
+    color: #ffffff;
+    border-radius: 0;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    border: none;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+
+  .track_section form button:hover {
+    background-color: #065968;
+  }
+
+  .contact_section {
+    position: relative;
+    padding-bottom: 90px;
+  }
+
+  .contact_section .heading_container {
+    margin-bottom: 25px;
+  }
+
+  .contact_section .heading_container h2 {
+    text-transform: uppercase;
+  }
+
+  .contact_section .form_container {
+    margin-right: 15px;
+  }
+
+  .contact_section .form_container input {
+    width: 100%;
+    border: none;
+    height: 50px;
+    margin-bottom: 25px;
+    padding-left: 15px;
+    outline: none;
+    color: #101010;
+    -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+            box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+  }
+
+  .contact_section .form_container input::-webkit-input-placeholder {
+    color: #04233b;
+  }
+
+  .contact_section .form_container input:-ms-input-placeholder {
+    color: #04233b;
+  }
+
+  .contact_section .form_container input::-ms-input-placeholder {
+    color: #04233b;
+  }
+
+  .contact_section .form_container input::placeholder {
+    color: #04233b;
+  }
+
+  .contact_section .form_container input.message-box {
+    height: 120px;
+  }
+
+  .contact_section .form_container button {
+    border: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 12px 55px;
+    background-color: #0a97b0;
+    color: #ffffff;
+    border-radius: 5px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    border: none;
+  }
+
+  .contact_section .form_container button:hover {
+    background-color: #065968;
+  }
+
+
+  .contact_section .map_container .map #googleMap {
+    height: 100%;
+  }
+
+
+
+  /* footer section*/
+  .footer_section {
+    position: relative;
+    background-color: black;
+    text-align: center;
+  }
+
+  .footer_section p {
+    color: white;
+    padding: 25px 0;
+    margin: 0;
+  }
+
+  .footer_section p a {
+    color: inherit;
+  }
+  /*# sourceMappingURL=style.css.map */
+</style>
+  <div class="hero_area">
+    <!-- header section strats -->
+
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand" href="index.html">
+              <span>
+                RETROUVER
+              </span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="aboutus.html">About Us</a>
+
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="signin.html">Login</a>
+                </li>
+
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div class="slider_bg_box">
+        <img src="images\dis.jpeg" alt="">
+      </div>
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7 ">
+                  <div class="detail-box">
+                <h1>
+                    RETROUVER: <br>
+                    Providing aid and comfort when it's needed most.
+                    </h1>
+                    <p>
+                      Innovative facial recognition systems: Ensuring no loved one goes unidentified in times of need.
+
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7 ">
+                  <div class="detail-box">
+                    <h1>
+                      In emergencies, the disaster management  <br>
+                      helpline is your first point of contact for help.
+                    </h1>
+                    <p>
+                      By understanding the unique challenges posed by different disasters and implementing appropriate precautions, individuals can minimize risks and protect themselves and their loved ones.
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7 ">
+                  <div class="detail-box">
+                    <h1>
+                      "Disaster management helpline: Your lifeline in times of crisis. <br>
+
+                    </h1>
+                    <p>
+                      By adopting a proactive approach and implementing precautionary measures throughout the disaster lifecycle, individuals can minimize risks and maximize safety for themselves and their communities.
+                    </p>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ol class="carousel-indicators">
+          <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+          <li data-target="#customCarousel1" data-slide-to="1"></li>
+          <li data-target="#customCarousel1" data-slide-to="2"></li>
+        </ol>
+      </div>
+
+    </section>
+    <!-- end slider section -->
+  </div>
+
+
+  <!-- service section -->
+
+  <section class="service_section layout_padding">
+    <div class="service_container">
+      <div class="container ">
+        <div class="heading_container">
+          <h2>
+            Our <span>Services</span>
+          </h2>
+
+        </div>
+        <div class="row">
+          <div class="col-md-6 ">
+            <div class="box ">
+              <div class="img-box">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/></svg>
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Facial Recognition
+                </h5>
+                <p>
+                  “Retrouver-Together We Come” is a web application that provides a way to
+                  help reconnect disaster victims with their family members.<p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 ">
+            <div class="box ">
+              <div class="img-box">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M448 80c8.8 0 16 7.2 16 16V415.8l-5-6.5-136-176c-4.5-5.9-11.6-9.3-19-9.3s-14.4 3.4-19 9.3L202 340.7l-30.5-42.7C167 291.7 159.8 288 152 288s-15 3.7-19.5 10.1l-80 112L48 416.3l0-.3V96c0-8.8 7.2-16 16-16H448zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm80 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"/></svg>
+              </div>
+              <div class="detail-box">
+                <h5>
+                SEARCHING
+                </h5>
+                <p>It aims to allow
+ users to create their profiles along with adding details of the person that needs
+ to be found. It then searches for a profile similar to the victim’s profile from its
+ database.
+                </p>
+
+              </div>
+            </div>
+          </div>
+
+              </div>
+            </div>
+          </div>
+
+  </section>
+
+  <!-- end service section -->
+
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding-bottom">
+    <div class="container  ">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                About <span>Us</span>
+              </h2>
+            </div>
+            <p>
+            Retrouver is a website that helps families find their loved ones during natural disasters. Our mission is to provide a platform where families can upload their loved ones' photos and use advanced algorithms to find similar profiles. We also provide general information about natural disasters and the precautions that need to be taken.
+            </p>
+
+          </div>
+        </div>
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="images\disss.jpeg" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- track section -->
+
+  <section class="track_section layout_padding">
+    <div class="track_bg_box">
+      <img src="images\disas.webp" alt="">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="heading_container">
+            <h2>
+              Precautions During Disaster
+            </h2>
+          </div>
+          <p>
+            <li>Stay informed about the disaster and follow the advice of local authorities.</li>
+            <li>Prepare an emergency kit with essential supplies such as food, water, and first aid items.</li>
+            <li>Have a communication plan in place with family members and loved ones.</li>
+            <li>Evacuate to a safe location if instructed to do so by authorities.</li>
+            <li>Avoid flooded areas and areas prone to landslides or other hazards.</li>
+            <li>Stay calm and help others in need if it is safe to do so.</li>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end track section -->
+
+  <br>
+  <br>
+  <!-- contact section -->
+  <section class="contact_section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 col-md-5 offset-md-1">
+          <div class="heading_container">
+            <h2>
+              Contact Us
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-5 offset-md-1">
+          <div class="form_container contact-form">
+            <form action="">
+              <div>
+                <input type="text" placeholder="Your Name" />
+              </div>
+              <div>
+                <input type="text" placeholder="Phone Number" />
+              </div>
+              <div>
+                <input type="email" placeholder="Email" />
+              </div>
+              <div>
+                <input type="text" class="message-box" placeholder="Message" />
+              </div>
+              <div class="btn_box">
+                <button>
+                  SEND
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+          </div>
+        </div>
+
+  </section>
+  <!-- end contact section -->
+
+
+  <!-- footer section -->
+  <section class="footer_section">
+    <div class="container">
+      <p>
+        &copy;Retrouver <span id="displayYear"></span>
+
+      </p>
+    </div>
+  </section>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="bootstrap\bootstrap.js"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- custom js -->
+  <script type="text/javascript" src="bootstrap\custom.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#customCarousel1').carousel();
+    });
+</script>
+
+
+
+
+</body>
+
+</html>

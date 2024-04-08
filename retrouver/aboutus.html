@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; /* Updated background color to white */
+            color: #000000; /* Updated text color to black */
+        }
+
+        nav {
+            background-color: white; /* Updated background color to black */
+            color: #ffffff; /* Updated text color to white */
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff; /* Updated text color to white */
+            padding: 0.5em 1em;
+        }
+
+        .button {
+            background-color: #000033; /* Updated button background color to dark blue */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        .button:hover {
+            background-color: #000066; /* Updated button hover background color */
+            color: white;
+        }
+
+        header {
+            background-color: #000033; /* Updated header background color to dark blue */
+            color: white;
+            text-align: center;
+            padding: 2em;
+        }
+
+        main {
+            padding: 2em;
+            line-height: 1.6;
+            position: relative;
+            z-index: 1;
+        }
+
+        main::before {
+            content: "";
+            background-image: url('images/disss.jpeg'); /* Updated image URL */
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: -1;
+            opacity: 0.4; /* Adjust the opacity as needed */
+        }
+
+        footer {
+            background-color: #000033; /* Updated footer background color to dark blue */
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        /* Additional styling */
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .section-content {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .info-section {
+            background-color: rgba(0, 0, 51, 0.1); /* Updated info-section background color */
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .info-section p {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <div class="button"><a href="index.html">Home</a></div>
+            <div class="button"><a href="signup.html">Sign Up</a></div>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>About Us</h1>
+    </header>
+
+    <main>
+        <div class="section-content">
+            <h2>Our Mission</h2>
+            <div class="info-section">
+                <p>Retrouver is a website that helps families find their loved ones during natural disasters. Our mission is to provide a platform where families can upload their loved ones' photos and use advanced algorithms to find similar profiles. We also provide general information about natural disasters and the precautions that need to be taken.</p>
+            </div>
+        </div>
+
+        <div class="section-content">
+            <h2>Our Team</h2>
+            <div class="info-section">
+                <p>Our team consists of experts in computer vision, machine learning, and web development. We are committed to ensuring the privacy and security of our users' data and using it only for the purpose of finding similar profiles.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Retrouver</p>
+    </footer>
+
+</body>
+
+</html>
